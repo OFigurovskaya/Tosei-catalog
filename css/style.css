@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-lite-grey: #F7F7F9;
+    --color-white: #FFFFFF;
+    --color-red: #CD0000;
+    --color-green: #73DB43;
+    --color-orange: #EBB428;
+} 
+
+/* glob */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
