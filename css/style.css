@@ -12,6 +12,7 @@
     --color-green: #73DB43;
     --color-orange: #EBB428;
     --color-black: #000;
+    --sizeindex: calc(1vw + 1vh);
 } 
 
 /* glob */
@@ -48,30 +49,29 @@ li {
     font-family: 'Montserrat', sans-serif;
 }
 
-.aside-left__logo {grid-area: aside-left__logo;}
-.navbar {grid-area: navbar;}
-.aside-left__social {grid-area: aside-left__social;}
 
 .aside-left {
     padding: 28px 0px 0px 0px;
-    display: grid;
-    grid-template-rows: 0.24fr 0.7fr 1fr 10fr;
-    grid-template-areas: "aside-left__logo"
-                         "navbar"
-                         "aside-left__social";
 }
 
 .aside-left__logo {
     outline: 1px solid red;
+    margin-bottom: 5.5vh;
+    
+}
+
+.aside-left__logo__img {
+    max-width: 100%;
 }
 
 .navbar__list {
     padding: .7vh 1.7vw;
+    margin-bottom: 40.5vh;
 }
 
 .navbar__list__href {
-    font-weight: 600;
-font-size: 16px;
+font-weight: 600;
+font-size: calc(var(--sizeindex) * 0.7);
 line-height: 20px;
 color: var(--color-black);
 }
@@ -82,4 +82,63 @@ color: var(--color-black);
 
 .aside-left__social {
     outline: 1px solid blue;
+    text-align: center;
+    padding: 0 3.4vw 0 1.6vw;
+}
+
+.aside-left__social__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   justify-items: stretch;
+  
+}
+
+.aside-left__social__list__href svg{
+    max-width: 100%;
+}
+
+/* header */
+
+.header .container {
+    outline: 1px solid blue;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 16.8vw 17vw;
+    padding: 27px 42px;
+}
+
+.header__descr,
+.header__number {
+    display: grid;
+    outline: 1px solid red;
+}
+
+.header__descr,
+.sign {
+font-weight: 400;
+font-size: calc(var(--sizeindex) * .61);
+line-height: 17px;
+color: var(--color-black);
+}
+
+.header__descr {
+    padding: 6px 2px;
+}
+
+.header__number {
+    text-align: right;
+    padding: 0;
+}
+
+.tel {
+font-weight: 700;
+font-size: calc(var(--sizeindex));
+line-height: 27px;
+color: var(--color-red);
+}
+
+.main-promo__header {
+    background-image: url('../img/promo_fon_1280.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
