@@ -1,3 +1,15 @@
+     const elements = document.querySelectorAll('.select__elem');
+        elements.forEach(function(element) {
+        const choices = new Choices(element, {
+            searchEnabled: false,
+            itemSelectText: '',
+            shouldSort: false,
+            position: 'bottom'
+        }); })
+        console.log(choices);
+
+
+
 ymaps.ready(init);
         function init(){
             var myMap = new ymaps.Map("map", {
@@ -15,3 +27,7 @@ ymaps.ready(init);
         
         // Размещение геообъекта на карте.
         myMap.geoObjects.add(myGeoObject);
+
+        
+
+   
