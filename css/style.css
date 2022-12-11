@@ -191,7 +191,7 @@ p {
 .main-search__form__top {
     display: flex;
     flex-direction: row;
-    margin-bottom: 3.5vh;
+    margin-bottom: 5vh;
 }
 
 #checkboxOne,
@@ -251,7 +251,7 @@ label {
     display: grid;
     font-weight: 400;
     font-size: calc(var(--sizeindex) * .6);
-    line-height: 16px;
+    line-height: 0px;
 }
 
 .main-search__form__center__type label,
@@ -267,10 +267,38 @@ label {
 }
 
 .choices__inner {
-    min-height: 30px;
-    max-height: 35px;
+    min-height: 35px;
+    max-height: 40px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    padding: 13.5px 2px 0px 2px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 2.5px;
+    font-size: calc(var(--sizeindex) * 0.6);
+    overflow: hidden;
 }
 
-.choices[data-type*="select-one"]::after {
-    top: 30%;
+
+.choices__list--single {
+    display: inline-block;
+    padding: 5px 16px 4px 15px;
+    width: 100%;
+}
+
+.choices[data-type*=select-one]::after {
+    content: url('../img/down_line.png');
+    height: 0;
+    width: 0;
+    border-style: none;
+    position: absolute;
+    right: 32px;
+    top: 25%;
+    margin-top: 0;
+    pointer-events: none;
+}
+
+.main-search__form__center__year label {
+    margin-bottom: 3.5vh;
 }
