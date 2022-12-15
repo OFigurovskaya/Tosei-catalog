@@ -186,18 +186,18 @@ p {
 .main-search {
     position: relative;
     outline: 1px solid red;
-    width: 91.5%;
+    width: 92.5%;
     margin: 0 auto;
     z-index: 1;
     margin-top: -104px;
-    padding: 22px 25px;
+    padding: 22px 27px;
     background-color: var(--color-white);
 }
 
 .main-search__form__top {
     display: flex;
     flex-direction: row;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 }
 
 #checkboxOne,
@@ -234,16 +234,17 @@ p {
 
 label {
     font-weight: 500;
-    font-size: calc(var(--sizeindex) * .62);
+    font-size: calc(var(--sizeindex) * .68);
     line-height: 120%;
-    margin-right: 4.3%;
+    margin-right: 4%;
 }
 
 .main-search__form__center {
     display: grid;
     grid-template-columns: 25% 20% 20% 21.5% 8.5%;
     justify-content: space-between;
-    gap: 12px;
+    gap: 13px;
+    padding: 17px 0;
 }
 
 .main-search__form__center__type,
@@ -256,7 +257,7 @@ label {
 .main-search__form__center__year label {
     display: grid;
     font-weight: 400;
-    font-size: calc(var(--sizeindex) * .6);
+    font-size: calc(var(--sizeindex) * .62);
     line-height: 0px;
 }
 
@@ -265,11 +266,24 @@ label {
 .main-search__form__center__stamp label,
 .main-search__form__center__year label {
     margin-bottom: 0px;
+    position: absolute;
+    top: 35%;
 }
 
 .main-search__form__center__year-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.choices {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.main-search__form__center__year__label {
+    /* margin-bottom: -3vh; */
 }
 
 .choices__inner {
@@ -306,5 +320,15 @@ label {
 }
 
 .main-search__form__center__year label {
-    margin-bottom: 3.5vh;
+    margin-bottom: 0vh;
+}
+
+.main-search__form__center__type select {
+    position: relative;
+}
+
+.main-search__form__bottom {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    justify-content: space-between;
 }
