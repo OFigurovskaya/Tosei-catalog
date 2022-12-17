@@ -72,7 +72,7 @@ p {
 
 .aside-left__logo {
     outline: 1px solid red;
-    margin-bottom: 5%;
+    margin-bottom: 20%;
 }
 
 .aside-left__logo__img {
@@ -80,7 +80,7 @@ p {
 }
 
 .navbar {
-    margin-bottom: 39%;
+    margin-bottom: 146.5%;
 }
 
 .navbar__list {
@@ -96,13 +96,17 @@ p {
 }
 
 .navbar__list__item:not(:last-child) {
-    margin-bottom: 3.7vh;
+    margin-bottom: 19%;
 }
 
 .aside-left__social {
     outline: 1px solid blue;
-    text-align: center;
-    padding: 0 3.4vw 0 1.6vw;
+    padding: 0 24% 0 16%;
+}
+
+.aside-left__social__list__href svg {
+    width: 30px;
+    height: 30px;
 }
 
 .aside-left__social__list {
@@ -175,18 +179,18 @@ p {
     color: var(--color-white);
     text-align: center;
     padding: 0;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 .main-search {
     position: relative;
     box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24);
     border-radius: 6px;
-    width: 92.5%;
+    width: 92.3%;
     margin: 0 auto;
     z-index: 1;
-    margin-top: -104px;
-    padding: 22px 27px;
+    margin-top: -106px;
+    padding: 24px 27px;
     background-color: var(--color-white);
     margin-bottom: 35px;
 }
@@ -194,7 +198,7 @@ p {
 .main-search__form__top {
     display: flex;
     flex-direction: row;
-    margin-bottom: 4.5vh;
+    margin-bottom: 4.3%;
 }
 
 #checkboxOne,
@@ -233,7 +237,7 @@ label {
     font-weight: 500;
     font-size: calc(var(--sizeindex) * .68);
     line-height: 120%;
-    margin-right: 5.3%;
+    margin-right: 4.5%;
 }
 
 .main-search__form__center {
@@ -242,7 +246,7 @@ label {
     justify-content: space-between;
     gap: 13px;
     padding: 8px 0;
-    margin-bottom: 1.5vh;
+    margin-bottom: 1.5%;
 }
 
 .main-search__form__center__type,
@@ -265,7 +269,7 @@ label {
 .main-search__form__center__year label {
     margin-bottom: 0px;
     position: absolute;
-    top: 35%;
+    top: 37%;
 }
 
 .main-search__form__center__year-wrapper {
@@ -329,7 +333,7 @@ label {
     display: grid;
     grid-template-columns: 25% 21%;
     justify-content: space-between;
-    margin-bottom: 1vh;
+    margin-bottom: 0vh;
 }
 
 .main-search__button {
@@ -337,7 +341,7 @@ label {
     color: var(--color-white);
     border-radius: 4px;
     border: none;
-    font-size: calc(var(--sizeindex) *0.6);
+    font-size: calc(var(--sizeindex) *0.7);
 }
 
 .main-search__form__bottom__res {
@@ -346,6 +350,7 @@ label {
     font-size: calc(var(--sizeindex) * 0.63);
     line-height: 16px;
     color: #808080;
+    padding: 3% 0;
 }
 
 .main-search__form__bottom__res__href {
@@ -368,19 +373,20 @@ label {
 }
 
 .main-popularCars {
-    padding: 0 3vw;
-
+    padding: 0 4%;
 }
+
 
 .main-popularCars__header {
     font-weight: 700;
-    font-size: calc(var(--sizeindex) * 1.1);
+    font-size: calc(var(--sizeindex) * 1.16);
     line-height: 29px;
     margin-bottom: 1.55vh;
+    padding: 0.5% 1.5%;
 }
 
 .main-popularCars__var {
-    padding: 0 2vw;
+    padding: 0 4%;
 }
 
 .main-popularCars__var input[type='radio'] {
@@ -392,16 +398,37 @@ label {
     position: relative;
 }
 
-.main-popularCars__var label::before {
+.radio-span::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    border-radius: 50%;
+    border-color: #4c4b4b;
+    position: absolute;
+    left: -8px;
+    bottom: 0;
+    background-image: url('../img/radio1.png');
+}
+
+.main-popularCars__var__var1:checked + .radio-span::before,
+.main-popularCars__var__var2:checked + .radio-span::before,
+.main-popularCars__var__var3:checked + .radio-span::before {
     content: "";
     display: inline-block;
     width: 17px;
     height: 18px;
     position: absolute;
-    left: -25px;
+    left: -24px;
     bottom: 0;
-    background-image: url('../img/radio1.png');
+    background-image: url('../img/radio_checked.png');
+    z-index: 50;
 }
+
+.label-radio {
+    margin-right: 4.4%;
+}
+
 
 .main-popularCars__var__var1 {
     display: block;
@@ -764,4 +791,12 @@ label {
     font-size: calc(var(--sizeindex) * .68);
     line-height: 190%;
     color: #8B8B8B;
+}
+
+.main-footer__mark {
+    font-weight: 500;
+font-size: 14px;
+line-height: 170%;
+color: #8B8B8B;
+font-size: calc(var(--sizeindex) * .75);
 }

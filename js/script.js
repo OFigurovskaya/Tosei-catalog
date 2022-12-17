@@ -23,7 +23,7 @@ myMap.geoObjects.add(myPlacemark);
             shouldSort: false,
             position: 'bottom'
         }); })
-        console.log(choices);
+
 
 
 
