@@ -483,18 +483,6 @@ label {
     background-color: var(--color-orange);
 }
 
-.main-popularCars__showAdd {
-    width: 100%;
-    align-items: center;
-    padding: 13px 0;
-    font-size: calc(var(--sizeindex) * .6);
-    line-height: 16px;
-    color: #2C2C2C;
-    background-color: #F4F4F4;
-    border-radius: 4px;
-    border-color: transparent;
-}
-
 .main-advantages {
     padding: 0 3vw;
 }
@@ -511,9 +499,9 @@ label {
 
 .main-advantages__cards__descr {
     font-weight: 500;
-font-size: calc(var(--sizeindex) * .6);
-line-height: 15px;
-color: #8B8B8B;
+    font-size: calc(var(--sizeindex) * .6);
+    line-height: 15px;
+    color: #8B8B8B;
 }
 
 .main-feedback {
@@ -534,7 +522,7 @@ color: #8B8B8B;
     width: 100%;
 }
 
-.main-feedback__button {
+.button {
     width: 100%;
     align-items: center;
     padding: 13px 0;
@@ -567,18 +555,85 @@ color: #8B8B8B;
 
 .main-purchase__right__articles__article__header {
     font-weight: 700;
-font-size: calc(var(--sizeindex) * .8);
-line-height: 20px;
-color: var(--color-black);
+    font-size: calc(var(--sizeindex) * .8);
+    line-height: 20px;
+    color: var(--color-black);
 }
 
 .main-purchase__right__articles__article__descr {
     font-weight: 500;
     font-size: calc(var(--sizeindex) * .55);
-line-height: 15px;
-color: #8B8B8B;
+    line-height: 15px;
+    color: #8B8B8B;
 }
 
 .main-purchase__right__articles__article:last-child {
     padding: 40% 40%;
+}
+
+.main-reviews {
+    padding: 0 3vw;
+}
+
+.main-reviews__articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-contacts__header,
+.main-contacts__address,
+.main-contacts__tel {
+    padding: 0 3vw;
+}
+
+.main-reviews__articles__article__header {
+    font-weight: 700;
+    font-size: calc(var(--sizeindex) * .8);
+    line-height: 20px;
+}
+
+.main-reviews__articles__article__descr {
+    font-weight: 500;
+    font-size: calc(var(--sizeindex) * .6);
+    line-height: 15px;
+    color: #8B8B8B;
+}
+
+.main-reviews__articles__article__descr span:not(:last-child) {
+    margin-right: .5vw;
+}
+
+.main-contacts__address {
+    font-weight: 500;
+    font-size: calc(var(--sizeindex) * .85);
+    line-height: 170%;
+    color: #323232;
+}
+
+.main-contacts__tel {
+    display: grid;
+    grid-template-columns: 1.9fr 1fr 1fr;
+    gap: 60px;
+}
+
+.main-contacts__tel__article__href {
+    font-weight: 500;
+    font-size: calc(var(--sizeindex) * .68);
+    line-height: 190%;
+    color: var(--color-red);
+}
+
+.main-contacts__tel__article__descr {
+    font-weight: 500;
+    font-size: calc(var(--sizeindex) * .68);
+line-height: 190%;
+color: #8B8B8B;
+display: inline;
+}
+
+.whatsup {
+font-weight: 500;
+font-size: calc(var(--sizeindex) * .68);
+line-height: 190%;
+color: #8B8B8B;
 }
