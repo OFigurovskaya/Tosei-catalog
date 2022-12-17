@@ -631,9 +631,27 @@ color: #8B8B8B;
 display: inline;
 }
 
+
 .whatsup {
 font-weight: 500;
 font-size: calc(var(--sizeindex) * .68);
 line-height: 190%;
 color: #8B8B8B;
 }
+
+.mail {
+font-weight: 500;
+font-size: calc(var(--sizeindex) * .66);
+line-height: 170%;
+color: var(--color-red);
+vertical-align: middle;
+}
+
+#map {
+    min-width: 100%;
+    min-height: auto;
+    padding: 0;
+}
+
+
+
