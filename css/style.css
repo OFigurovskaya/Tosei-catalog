@@ -35,11 +35,6 @@ p {
 }
 
 /* main */
-#map {
-    width: 300px;
-    height: 300px;
-}
-
 .aside-left {
     grid-area: aside-left;
 }
@@ -77,8 +72,7 @@ p {
 
 .aside-left__logo {
     outline: 1px solid red;
-    margin-bottom: 5vh;
-
+    margin-bottom: 5%;
 }
 
 .aside-left__logo__img {
@@ -86,7 +80,7 @@ p {
 }
 
 .navbar {
-    margin-bottom: 39vh;
+    margin-bottom: 39%;
 }
 
 .navbar__list {
@@ -545,6 +539,8 @@ label {
 
 .main-purchase__left {
     background-image: url('../img/purchase_1280_big.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .main-purchase__right__articles {
@@ -653,5 +649,52 @@ vertical-align: middle;
     padding: 0;
 }
 
+.main-popularCars__avto__desr__duty {
+    font-size: calc(var(--sizeindex) * .66);
+}
+
+.main-advantages__headers,
+.main-feedback__header,
+.main-purchase__right__header,
+.main-reviews__header,
+.main-contacts__header,
+.main-contacts__feedback__header {
+    font-size: calc(var(--sizeindex) * 1.1);
+}
+
+.main-advantages__cards__header {
+    font-size: calc(var(--sizeindex) * .7);
+}
+
+.main-feedback__article__name,
+.main-feedback__article__avto {
+    font-size: calc(var(--sizeindex) * .7);
+}
+
+.main-reviews__articles__article__video {
+    max-width: 100%;
+}
 
 
+.main-contacts__map {
+position: relative;
+}
+
+.main-contacts__feedback {
+    width: 37%;
+    outline: 1px solid red;
+    z-index: 20;
+    margin-top: -300px;
+    position: absolute;
+    margin-left: 45px;
+    padding: 24px;
+}
+
+.main-contacts__feedback__header {
+    width: 100%;
+}
+
+.main-contacts__feedback__form {
+    display: grid;
+    gap: 15px;
+}
