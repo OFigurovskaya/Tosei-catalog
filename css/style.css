@@ -237,7 +237,7 @@ label {
     font-weight: 500;
     font-size: calc(var(--sizeindex) * .68);
     line-height: 120%;
-    margin-right: 4.5%;
+    margin-right: 4%;
 }
 
 .main-search__form__center {
@@ -387,6 +387,7 @@ label {
 
 .main-popularCars__var {
     padding: 0 4%;
+    margin-bottom: 20px;
 }
 
 .main-popularCars__var input[type='radio'] {
@@ -444,14 +445,17 @@ label {
 .avto3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 27px;
     padding: 16px;
 }
+
 
 
 .main-popularCars__avto__desr__name {
     font-weight: 800;
     font-size: calc(var(--sizeindex) * 1.05);
     line-height: 27px;
+    padding: 7px 0;
 }
 
 .main-popularCars__avto__desr__V,
@@ -464,6 +468,7 @@ label {
     font-size: calc(var(--sizeindex) * .7);
     line-height: 17px;
     color: #8B8B8B;
+    margin-bottom: 10px;
 }
 
 .main-popularCars__avto__desr__V span,
@@ -476,23 +481,41 @@ label {
     font-size: calc(var(--sizeindex) * .7);
     line-height: 17px;
     color: #000000;
+   
 }
+
+.main-popularCars__avto__add {
+    padding: 47px 25px;
+}
+
+.main-popularCars__avto__price {
+    padding: 46px 2px 25px 0;
+    justify-items: end;
+    display: grid;
+}
+
+.main-popularCars__avto__price__city {
+    margin-bottom: -10px;
+}
+
 
 .main-popularCars__avto__price__rub {
     font-weight: 700;
-    font-size: calc(var(--sizeindex) * .95);
-    line-height: 24px;
+    font-size: calc(var(--sizeindex));
+    line-height: 0px;
     color: var(--color-black);
+    margin-bottom: 0px;
 }
 
 .main-popularCars__avto__price__button {
     font-weight: 500;
     font-size: calc(var(--sizeindex) * .6);
-    line-height: 16px;
+    line-height: 0px;
     color: var(--color-white);
     border-radius: 35px;
     border-color: transparent;
-    padding: 4px 10px;
+    padding: 0px 10px;
+   
 }
 
 .avto1 .main-popularCars__avto__price__button,
